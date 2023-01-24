@@ -1,0 +1,112 @@
+@import url('https://fonts.maateen.me/siyam-rupali/font.css');
+.easy{
+    margin-top: 5%!important;
+    text-shadow: 0 0px 3px #EE2D42, 0 0px 2px #EE2D42 !important;
+    -webkit-text-stroke:0px var(--red)!important;
+}
+
+.payment {
+margin-left: -2%!important;
+text-shadow: 0 0px 3px #006A4E, 0 0px 2px #006A4E !important;
+-webkit-text-stroke:0px var(--red)!important;
+}
+.system{
+    margin-top: 2%;
+    text-shadow: 0 0px 3px #006A4E, 0 0px 2px #006A4E !important;
+    -webkit-text-stroke:0px var(--red)!important;
+
+}
+
+/* About Us Page */
+
+.bnpagehead{
+    margin-top: 1%;
+}
+.bnpagehead p{
+    margin-top: 0.5%;
+}
+
+.details h3{
+    line-height: 70px;
+    margin-top: 20px;
+}
+
+.hd ul li a {
+    font-size:14px;
+}
+
+.footer ul li a {
+    font-size: 14px;
+  }
+
+  .footer ul li a.active {
+    color: white;
+    margin-top: -5px;
+    font-weight: 600;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -10px;
+  }
+
+  .serviceslider .carousel-caption h5 span {
+    color: #B5B5B5;
+    font-size: 70px;
+    position: absolute;
+    font-weight: 900;
+    left: 1%;
+    top: 93%;
+    padding-top: 5px;
+  }
+
+  .seasy {
+
+    top: 27%;
+    line-height: 61px;
+  }
+
+
+
+
+  @keyframes openclose {
+    0% {
+
+      width: 0;
+    }
+
+
+    10% {
+
+      width: 300px;
+    }
+
+
+      20% {
+
+        width: 0px;
+      }
+
+      30%{
+        width: 300px;
+      }
+
+
+
+      95%{
+        width: 300px;
+      }
+      100%{
+        width:0px ;
+      }
+
+
+
+  }
+
+
+
+
+@media only screen and (min-width: 315px) and (max-width: 767px){
+    .easy{
+    margin-top: 8%!important;
+}
+}
