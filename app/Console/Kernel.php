@@ -15,11 +15,11 @@ class Kernel extends ConsoleKernel
      */
 
     protected $command = [
-        Commands\JobStatusUpdate::class,
+        App\Console\Commands\JobStatusUpdate::class,
     ];
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('career:JobStatusUpdate')->cron('0 * * * *');
+         $schedule->command('career:JobStatusUpdate')->everyMinute();;
     }
 
     /**
