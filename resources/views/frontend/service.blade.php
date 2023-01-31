@@ -1,8 +1,32 @@
 @extends('frontend.layout.app')
 
+
+@if(app()->getLocale()=='en')
+
 @section('title')
-Services | EPS
+Services | EPS| Easy Payment System
 @endsection
+
+@section('metadescription')
+
+
+Easy Payment System (EPS) provides a number of services that enable effortless financial transactions for every sector of our daily lives.
+
+@endsection
+@endif
+
+@if(app()->getLocale()=='bn')
+
+@section('title')
+সার্ভিসেস | ইপিএস | ইজি পেমেন্ট সিস্টেম
+@endsection
+
+@section('metadescription')
+
+ইজি পেমেন্ট সিস্টেম (ইপিএস) আমাদের দৈনন্দিন জীবনের আর্থিক লেনদেনগুলোকে সহজ এবং নিরাপদ করতে বিভিন্ন ধরনের সার্ভিস প্রদান করে
+
+@endsection
+@endif
 
 
 @section('maincontent')
@@ -66,7 +90,7 @@ Services | EPS
                                     <p></p>
                                 </div>
 
-                                <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/paymentgateway.svg" alt="">
+                                <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/paymentgateway.svg" alt="EPS Payment Gateway">
                                </div>
 
                             </div>
@@ -110,7 +134,7 @@ Services | EPS
                                         <p></p>
                                     </div>
 
-                                    <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/Bill-Pay.svg" alt="">
+                                    <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/Bill-Pay.svg" alt="EPS Bill Payment">
                                    </div>
 
                                 </div>
@@ -154,7 +178,7 @@ Services | EPS
                                             <p></p>
                                         </div>
 
-                                        <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/mobile.svg" alt="">
+                                        <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/mobile.svg" alt="EPS Mobile Recharge">
                                        </div>
 
                                     </div>
@@ -228,7 +252,7 @@ Services | EPS
                                     <p></p>
                                 </div>
 
-                                <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/paymentgateway.svg" alt="">
+                                <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/paymentgateway.svg" alt="ইপিএস পেমেন্ট গেটওয়ে  ">
                                </div>
 
                             </div>
@@ -272,7 +296,7 @@ Services | EPS
                                         <p></p>
                                     </div>
 
-                                    <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/Bill-Pay.svg" alt="">
+                                    <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/Bill-Pay.svg" alt="ইপিএস বিল পেমেন্ট ">
                                    </div>
 
                                 </div>
@@ -316,7 +340,7 @@ Services | EPS
                                             <p></p>
                                         </div>
 
-                                        <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/mobile.svg" alt="">
+                                        <img class="animate__animated animate__slideInUp animate__slower	2s" src="{{ URL::to('')}}/frontend/img/slider/mobile.svg" alt="ইপিএস মোবাইল রিচার্জ ">
                                        </div>
 
                                     </div>
@@ -396,7 +420,7 @@ Services | EPS
             <div class="row">
 
                 <div class="col-md-4 servicelist" id="paymentgateway">
-                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="">
+                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt=" Payment Gateway EPS">
                     <h3>Payment <span> Gateway</span></h3>
                     <p>EPS gives the best in-class Payment Gateway for your Customers </p>
                     <a href="{{ route('frontend.payment') }}"> Read More <i class="fa-solid fa-chevron-right"></i></a>
@@ -409,7 +433,7 @@ Services | EPS
                 </div>
 
                 <div class="col-md-4 servicelist" id="billpay">
-                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="">
+                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="EPS">
                     <h3>Bill <span> Payment </span></h3>
                     <p>EPS offers the easiest way to pay all your bills from a single App</p>
                     <a href="{{ route('frontend.billpay') }}"> Read More <i class="fa-solid fa-chevron-right"></i></a>
@@ -423,7 +447,7 @@ Services | EPS
                 </div>
 
                 <div class="col-md-4 servicelist" id="recharge">
-                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="">
+                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="EPS">
                     <h3>Mobile <span> Recharge</span></h3>
                     <p>EPS makes your mobile recharge simpler and faster</p>
                     <a href="{{ route('frontend.mobile_recharge') }}"> Read More <i class="fa-solid fa-chevron-right"></i></a>
@@ -474,7 +498,7 @@ Services | EPS
             <div class="row">
 
                 <div class="col-md-4 servicelist" id="paymentgateway">
-                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="">
+                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="ইপিএস">
                     <h3>পেমেন্ট  <span> গেটওয়ে</span></h3>
                     <p>ইপিএস আপনার কাস্টমারদের জন্য সময়ের সেরা পেমেন্ট গেটওয়ে অফার করে </p>
                     <a href="{{ route('frontend.payment') }}"> আরও পড়ুন <i class="fa-solid fa-chevron-right"></i></a>
@@ -487,7 +511,7 @@ Services | EPS
                 </div>
 
                 <div class="col-md-4 servicelist" id="billpay">
-                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="">
+                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="ইপিএস">
                     <h3>বিল <span> পেমেন্ট </span></h3>
                     <p>ইপিএস অ্যাপ আপনার সকল বিল পে করার সবচেয়ে সহজ উপায় অফার করে </p>
                     <a href="{{ route('frontend.billpay') }}"> আরও পড়ুন <i class="fa-solid fa-chevron-right"></i></a>
@@ -501,7 +525,7 @@ Services | EPS
                 </div>
 
                 <div class="col-md-4 servicelist" id="recharge">
-                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="">
+                    <img src="{{ URL::to('') }}/frontend/img/service_page/sendmoney.png" alt="ইপিএস">
                     <h3>মোবাইল  <span> রিচার্জ</span></h3>
                     <p>ইপিএস-এর মাধ্যমে আপনার মোবাইল রিচার্জ হবে আরও সিম্পল এবং ফাস্ট</p>
                     <a href="{{ route('frontend.mobile_recharge') }}"> আরও পড়ুন <i class="fa-solid fa-chevron-right"></i></a>

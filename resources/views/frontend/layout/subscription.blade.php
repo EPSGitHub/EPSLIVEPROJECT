@@ -16,7 +16,7 @@
 <!-- Subscription section END -->
 
 <div class="subform animate__animated animate__fadeIn animate__slow" id="sbtn" >
-    <img src="frontend/img/subimg.png" width="158px" height="129px" alt="">
+    <img src="frontend/img/subimg.png" width="158px" height="129px" alt="EPS Subscription">
     <p class="btn btn-sm text-white lbtn "  style="">Let's Make a Connection</p>
         <svg class="crsbtn"  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"  style="cursor: pointer;" onclick="subscriptionclose()">
             <path d="M11.1824 0.34152L5.33255 6.1824C5.11085 6.4159 5 6.68849 5 6.99998C5 7.31749 5.11082 7.58703 5.33255 7.80876L11.1824 13.6586C11.41 13.8862 11.6826 14 12.0001 14C12.3237 14 12.5932 13.8861 12.8088 13.6586L13.4827 12.9847C13.7103 12.769 13.8243 12.4994 13.8243 12.1759C13.8243 11.8524 13.7103 11.5829 13.4827 11.3671L9.1245 6.99998L13.4826 2.63279C13.7101 2.41726 13.8242 2.14769 13.8242 1.82392C13.8242 1.5066 13.7101 1.23389 13.4826 1.0064L12.8087 0.332581C12.587 0.110913 12.3175 6.33818e-07 12 6.47692e-07C11.6825 6.61574e-07 11.4099 0.113746 11.1824 0.34152Z" fill="#EE2D43"/>
@@ -46,7 +46,7 @@
     @endif
         <input style=" background:#006B4F; color:white;" type="submit" value="@lang('home.subcribebtn')"  class="form-control">
     </form>
-    <img src="frontend/img/Ellipse.png" id="cornerimg"/>
+    <img src="frontend/img/Ellipse.png" alt="Easy Payment System Subscription" id="cornerimg"/>
 
 </div>
 {{-- MObile Version --}}

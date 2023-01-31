@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="logo1 col-md-2">
-      <a href="{{ route('fontend.home') }}"><img src="{{ URL::to('') }}/frontend/img/logo/eps-logo.svg" class="" alt=""></a>
+      <a href="{{ route('fontend.home') }}"><img src="{{ URL::to('') }}/frontend/img/logo/eps-logo.svg" class="" alt="EPS - Easy Payment System"></a>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>

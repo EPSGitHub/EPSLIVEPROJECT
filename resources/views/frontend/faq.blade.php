@@ -1,9 +1,31 @@
 
  @extends('frontend.layout.app')
 
+ @if(app()->getLocale()=='en')
+
  @section('title')
-FAQ | EPS
+ FAQ| EPS | Easy Payment System
  @endsection
+
+ @section('metadescription')
+
+ Easy Payment System - EPS is an innovative payment solution to make digital transactions effortless.
+
+ @endsection
+ @endif
+
+ @if(app()->getLocale()=='bn')
+
+ @section('title')
+ সাধারণ জিজ্ঞাসা| ইপিএস | ইজি পেমেন্ট সিস্টেম
+ @endsection
+
+ @section('metadescription')
+
+ ইজি পেমেন্ট সিস্টেম (ইপিএস) একটি ইনোভেটিভ পেমেন্ট সল্যুশন। পেমেন্ট গেটওয়ে, বিল পেমেন্ট, মোবাইল রিচার্জ সহ বিভিন্ন সার্ভিস প্রদানের মাধ্যমে ইপিএস আপনার ডিজিটাল লেনদেনকে
+
+ @endsection
+ @endif
 
 
  @section('maincontent')

@@ -1,8 +1,30 @@
 @extends('frontend.layout.app')
 
+@if(app()->getLocale()=='en')
+
 @section('title')
-About Us | EPS
+About Us | EPS | Wind of Change in Digital Transaction
 @endsection
+
+@section('metadescription')
+
+Easy Payment System is an innovative payment solution permitted by Bangladesh Bank as a Payment System Operator (PSO).
+
+@endsection
+@endif
+
+@if(app()->getLocale()=='bn')
+
+@section('title')
+ইপিএস পরিচিতি | ইপিএস | ডিজিটাল লেনদেনে পরিবর্তনের হাওয়া
+@endsection
+
+@section('metadescription')
+
+ইজি পেমেন্ট সিস্টেম (ইপিএস) একটি ইনোভেটিভ পেমেন্ট সল্যুশন এবং এটি বাংলাদেশ ব্যাংক কর্তৃক অনুমোদনপ্রাপ্ত একটি পেমেন্ট সিস্টেম অপারেটর (পিএসও)।
+
+@endsection
+@endif
 
 
 @section('maincontent')
@@ -73,13 +95,13 @@ About Us | EPS
 
 
                             <div class="abtvision">
-                                <img src="{{ URL::to('') }}/frontend/img/vision.png" alt=""> <span>@lang('about.vision')</span>
+                                <img src="{{ URL::to('') }}/frontend/img/vision.png" alt="EPS Vision"> <span>@lang('about.vision')</span>
                                 <p>@lang('about.vision_details')</p>
                             </div>
 
 
 						<div class="abtmission">
-                            <img  src="{{ URL::to('') }}/frontend/img/mission.png" alt=""> <span>@lang('about.mission')</span>
+                            <img  src="{{ URL::to('') }}/frontend/img/mission.png" alt="EPS Misssion"> <span>@lang('about.mission')</span>
 							<p>@lang('about.mission_details')</p>
                         </div>
                         </div>
@@ -176,7 +198,7 @@ About Us | EPS
 								<!-- ------------------------------------------- -->
 								<div class="col-md-6 sigdiv hvr-grow">
 									<a href="#"   data-bs-toggle="modal" data-bs-target="#mohsin" ><img
-											src="{{ URL::to('') }}/frontend/img/team/Mohammad-Mohsin.png" alt=""></a>
+											src="{{ URL::to('') }}/frontend/img/team/Mohammad-Mohsin.png" alt="EPS-Easy Payment System Chairman"></a>
 									<div class="dtl">
 										<a href="#" data-bs-toggle="modal" data-bs-target="#mohsin">
 											<h6>@lang('about.mohsin')</h6>
@@ -186,7 +208,7 @@ About Us | EPS
 								</div>
 								<!-- ----------------------------------------------------- -->
 								<div class="col-md-6 sigdiv hvr-grow">
-									<a href="#" data-bs-toggle="modal" data-bs-target="#shahalam" ><img src="{{ URL::to('') }}/frontend/img/team/Md-Shah-Alam.png" alt=""></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#shahalam" ><img src="{{ URL::to('') }}/frontend/img/team/Md-Shah-Alam.png" alt="EPS-Easy Payment System Managing Director"></a>
 									<div class="dtl">
 										<a href="" data-bs-toggle="modal" data-bs-target="#shahalam"><h6>@lang('about.shahalam')</h6></a>
 										<p>@lang('about.MD')</p>
@@ -223,7 +245,7 @@ About Us | EPS
 							<div class="row">
 								<!-- ------------------------------------------- -->
 								<div class="col-md-4 sigdiv hvr-grow">
-									<a href="#" data-bs-toggle="modal" data-bs-target="#nasir"><img src="{{ URL::to('') }}/frontend/img/team/Nasir-Uddin.png" alt=""></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#nasir"><img src="{{ URL::to('') }}/frontend/img/team/Nasir-Uddin.png" alt="EPS-Easy Payment System Director"></a>
 									<div class="dtl">
 										<a href="#" data-bs-toggle="modal" data-bs-target="#nasir">
 											<h6>@lang('about.nasir')</h6>
@@ -234,7 +256,7 @@ About Us | EPS
 								<!-- ----------------------------------------------------- -->
 
                                 <div class="col-md-4 sigdiv hvr-grow">
-									<a href="#"  data-bs-toggle="modal" data-bs-target="#faruq"><img src="{{ URL::to('') }}/frontend/img/team/Faruq-Ahmed.jpg" alt=""></a>
+									<a href="#"  data-bs-toggle="modal" data-bs-target="#faruq"><img src="{{ URL::to('') }}/frontend/img/team/Faruq-Ahmed.jpg" alt="EPS-Easy Payment System Director"></a>
 									<div class="dtl">
 										<a href="#" data-bs-toggle="modal" data-bs-target="#faruq">
 											<h6>@lang('about.faruq')</h6>
@@ -244,7 +266,7 @@ About Us | EPS
 								</div>
 
                                 <div class="col-md-4 sigdiv hvr-grow">
-									<a href="#" data-bs-toggle="modal" data-bs-target="#nasimul"><img src="{{ URL::to('') }}/frontend/img/team/Nasimul-Hasin.png" alt=""></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#nasimul"><img src="{{ URL::to('') }}/frontend/img/team/Nasimul-Hasin.png" alt="EPS-Easy Payment System Director"></a>
 									<div class="dtl">
 										<a href="#" data-bs-toggle="modal" data-bs-target="#nasimul">
 											<h6>@lang('about.nasimul') </h6>
@@ -295,7 +317,7 @@ About Us | EPS
 		<div class="row">
            <div class="col-md-2"></div>
            <div class="col-md-8">
-            <img src="{{ URL::to('') }}/frontend/img/logo-png.png" alt="">
+            <img src="{{ URL::to('') }}/frontend/img/logo-png.png" alt="Easy Payment System Logo">
             <a href="{{ URL::to('') }}/frontend/img/epslogo.jpg"class="btn btn-success shadow-none"  download="epslogo"> <i class="fa-solid fa-cloud-arrow-down"></i> @lang('about.download')</a>
            </div>
            <div class="col-md-2"></div>

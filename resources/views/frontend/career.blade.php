@@ -1,9 +1,31 @@
 
  @extends('frontend.layout.app')
 
+ @if(app()->getLocale()=='en')
+
  @section('title')
-Career | EPS
+ Career | EPS | Easy Payment System
  @endsection
+
+ @section('metadescription')
+
+ Build your Career with EPS
+
+ @endsection
+ @endif
+
+ @if(app()->getLocale()=='bn')
+
+ @section('title')
+ ক্যারিয়ার | ইপিএস | ইজি পেমেন্ট সিস্টেম
+ @endsection
+
+ @section('metadescription')
+
+ আপনার ক্যারিয়ার গড়ুন ইপিএসের সাথে
+
+ @endsection
+ @endif
 
 
  @php

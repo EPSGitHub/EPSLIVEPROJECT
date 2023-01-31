@@ -1,8 +1,32 @@
 @extends('frontend.layout.app')
 
+@if(app()->getLocale()=='en')
+
 @section('title')
-Press Release | EPS
+Press Release | EPS | Easy Payment System
 @endsection
+
+@section('metadescription')
+
+Easy Payment System - EPS is an innovative payment solution to make digital transactions effortless.
+
+@endsection
+@endif
+
+@if(app()->getLocale()=='bn')
+
+@section('title')
+প্রেস রিলিজ | ইপিএস | ইজি পেমেন্ট সিস্টেম
+@endsection
+
+@section('metadescription')
+
+ইজি পেমেন্ট সিস্টেম (ইপিএস) একটি ইনোভেটিভ পেমেন্ট সল্যুশন। পেমেন্ট গেটওয়ে, বিল পেমেন্ট, মোবাইল রিচার্জ সহ বিভিন্ন সার্ভিস প্রদানের মাধ্যমে ইপিএস আপনার ডিজিটাল লেনদেনকে
+
+@endsection
+@endif
+
+
 
 @php
 
@@ -52,7 +76,7 @@ Press Release | EPS
 
 
                     <div class="carousel-item active">
-                        <img src="{{ URL::to('') }}/frontend/img/media/slider/banglapost.png"  class="d-block w-100 " alt="...">
+                        <img src="{{ URL::to('') }}/frontend/img/media/slider/banglapost.png"  class="d-block w-100 " alt="EPS Press Release">
                         <div class="carousel-caption d-md-block ">
                             <h5>Bangladesh Bank granted Payment System Operator (PSO) license to Easy Payment System (EPS)</h5>
                             <p>Easy Payment System (EPS) is an innovative payment solution permitted by Bangladesh Bank as a Payment System Operator (PSO).</p>
@@ -64,7 +88,7 @@ Press Release | EPS
 
 
                     <div class="carousel-item ">
-                      <img src="{{ URL::to('') }}/frontend/img/media/slider/dailystar.png" class="d-block w-100" alt="...">
+                      <img src="{{ URL::to('') }}/frontend/img/media/slider/dailystar.png" class="d-block w-100" alt="Easy Payment System Press Release">
                       <div class="carousel-caption  d-md-block ">
                           <h5>OSSL received Payment System Operator (PSO) license from Bangladesh Bank</h5>
                           <p>Technology solution-providing company Optimum Solution and Services Ltd. (OSSL) received the Payment System Operator (PSO) license from Bangladesh Bank on 23 August...</p>
@@ -75,7 +99,7 @@ Press Release | EPS
 
 
                     <div class="carousel-item ">
-                        <img src="{{ URL::to('') }}/frontend/img/media/slider/business_s.png"  class="d-block w-100 " alt="...">
+                        <img src="{{ URL::to('') }}/frontend/img/media/slider/business_s.png"  class="d-block w-100 " alt="Easy Payment System Press Release">
                         <div class="carousel-caption  d-md-block ">
                             <h5>OSSL received PSO license from Bangladesh Bank</h5>
                             <p>Bangladesh Bank granted the Payment System Operator (PSO) license to technology solution provider Optimum Solution and Services Ltd. (OSSL) ...</p>
@@ -143,7 +167,7 @@ Press Release | EPS
                     <div class="col-md-10  pressblog">
                         <div class="row">
                             <div class="col-md-5">
-                                <img src="{{ URL::to('') }}/media/press/{{ $p->	feature_img }}" alt="">
+                                <img src="{{ URL::to('') }}/media/press/{{ $p->	feature_img }}" alt="ইজি পেমেন্ট সিস্টেম প্রেস রিলিজ ">
                             </div>
                             <div class="col-md-7">
 
@@ -198,7 +222,7 @@ Press Release | EPS
                     <div class="col-md-10  pressblog">
                         <div class="row">
                             <div class="col-md-5">
-                                <img src="{{ URL::to('') }}/media/press/{{ $p->	feature_img }}" alt="">
+                                <img src="{{ URL::to('') }}/media/press/{{ $p->	feature_img }}" alt="ইজি পেমেন্ট সিস্টেম প্রেস রিলিজ ">
                             </div>
                             <div class="col-md-7">
 
@@ -213,7 +237,7 @@ Press Release | EPS
                                 <h4>{{ $p->title }}</h4>
                                 <p>{{ $p->shortdes }}</p>
 
-                                <a href="{{ route('frontend.pressdetails',$p->slug) }}" class="btn btn-success shadow-none">Read More</a>
+                                <a href="{{ route('frontend.pressdetails',$p->slug) }}" class="btn btn-success shadow-none">আরও পড়ুন</a>
                             </div>
 
                         </div>

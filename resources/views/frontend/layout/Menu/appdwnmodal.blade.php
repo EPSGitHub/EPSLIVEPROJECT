@@ -19,19 +19,19 @@
             <div class="row">
               <div class="col-md-4 dwnsec">
                 <a class=""  data-bs-dismiss="modal"  >&times;</a>
-                <img  src="{{ URL::to('') }}/media/settings/app/{{$dwnpopup->appimg }}" class="modalimg" alt="">
+                <img  src="{{ URL::to('') }}/media/settings/app/{{$dwnpopup->appimg }}" class="modalimg" alt="EPS - Easy Payment System">
 
 
 
               </div>
               <div class="col-md-8 dwndes">
 
-                <h4>@lang('menu.download') <img src="{{ URL::to('') }}/frontend/img/appseclogo.png"  alt=""> @lang('menu.app')</h4>
+                <h4>@lang('menu.download') <img src="{{ URL::to('') }}/frontend/img/appseclogo.png"  alt="Easy Payment System App "> @lang('menu.app')</h4>
                 <p style=""> {{  $dwnpopup->{'apptxt_'.app()->getLocale()} }}  {{-- <a href="{{ route('frontend.app_details') }}"> More Details</a> --}}</p>
 
                 <div class="appicon">
-                    <a href="{{ $dwnpopup->apklink }}"><img src="{{ URL::to('') }}/frontend/img/googleplay.png" class="googleplay" alt=""></a>
-                <a href="{{ $dwnpopup->ioslink }}"><img src="{{ URL::to('') }}/frontend/img/appstore.png" class="appstore" alt=""></a>
+                    <a href="{{ $dwnpopup->apklink }}"><img src="{{ URL::to('') }}/frontend/img/googleplay.png" class="googleplay" alt="EPS Android App"></a>
+                <a href="{{ $dwnpopup->ioslink }}"><img src="{{ URL::to('') }}/frontend/img/appstore.png" class="appstore" alt="EPS Ios App "></a>
                 </div>
 
               </div>

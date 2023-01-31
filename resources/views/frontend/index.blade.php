@@ -1,5 +1,7 @@
 @extends('frontend.layout.app')
 
+@if(app()->getLocale()=='en')
+
 @section('title')
 EPS | Easy Payment System
 @endsection
@@ -9,6 +11,20 @@ EPS | Easy Payment System
 Easy Payment System - EPS is an innovative payment solution to make digital transactions effortless.
 
 @endsection
+@endif
+
+@if(app()->getLocale()=='bn')
+
+@section('title')
+ইপিএস | ইজি পেমেন্ট সিস্টেম
+@endsection
+
+@section('metadescription')
+
+ইজি পেমেন্ট সিস্টেম (ইপিএস) একটি ইনোভেটিভ পেমেন্ট সল্যুশন। পেমেন্ট গেটওয়ে, বিল পেমেন্ট, মোবাইল রিচার্জ সহ বিভিন্ন সার্ভিস প্রদানের মাধ্যমে ইপিএস আপনার ডিজিটাল লেনদেনকে
+
+@endsection
+@endif
 
 @section('maincontent')
 
@@ -79,16 +95,16 @@ Easy Payment System - EPS is an innovative payment solution to make digital tran
       <!-- slide -->
       <ul>
         <li class="paymentgateway active ">
-            <img src="{{ URL::to('') }}/frontend/img/slider/payment.jpg" alt="">
+            <img src="{{ URL::to('') }}/frontend/img/slider/payment.jpg" alt="EPS Payment Gateway Service">
           </li>
 
         <li class="billpay">
-          <img src="{{ URL::to('') }}/frontend/img/slider/billpay.jpg" alt="">
+          <img src="{{ URL::to('') }}/frontend/img/slider/billpay.jpg" alt="EPS Bill Pay Service">
         </li>
 
 
         <li class="mobile">
-            <img src="{{ URL::to('') }}/frontend/img/slider/mobilet.jpg" alt="">
+            <img src="{{ URL::to('') }}/frontend/img/slider/mobilet.jpg" alt="EPS Mobile Recharge Service">
           </li>
 
        {{--  <li class="corporate">
@@ -111,14 +127,14 @@ Easy Payment System - EPS is an innovative payment solution to make digital tran
       <ul>
 
         <li class="paymentgatewayb active">
-            <img src="{{ URL::to('') }}/frontend/img/slider/paymentb.jpg" alt="">
+            <img src="{{ URL::to('') }}/frontend/img/slider/paymentb.jpg" alt="EPS Payment Option ">
           </li>
         <li class="billpayb">
-          <img src="{{ URL::to('') }}/frontend/img/slider/billpayb.jpg" alt="">
+          <img src="{{ URL::to('') }}/frontend/img/slider/billpayb.jpg" alt="Bill Pay Using EPS">
         </li>
 
         <li class="mobileb">
-          <img src="{{ URL::to('') }}/frontend/img/slider/mobileb.jpg" alt="">
+          <img src="{{ URL::to('') }}/frontend/img/slider/mobileb.jpg" alt="EPS Mobile Recharge">
         </li>
        {{--  <li class="corporateb">
           <img src="{{ URL::to('') }}/frontend/img/slider/Corporate_B.jpg" alt="">

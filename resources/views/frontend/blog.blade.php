@@ -1,8 +1,30 @@
 @extends('frontend.layout.app')
 
+@if(app()->getLocale()=='en')
+
 @section('title')
-Blog | EPS
+Blog | EPS | Easy Payment System
 @endsection
+
+@section('metadescription')
+
+Easy Payment System - EPS is an innovative payment solution to make digital transactions effortless.
+
+@endsection
+@endif
+
+@if(app()->getLocale()=='bn')
+
+@section('title')
+ব্লগ | ইপিএস | ইজি পেমেন্ট সিস্টেম
+@endsection
+
+@section('metadescription')
+
+ইজি পেমেন্ট সিস্টেম (ইপিএস) একটি ইনোভেটিভ পেমেন্ট সল্যুশন। পেমেন্ট গেটওয়ে, বিল পেমেন্ট, মোবাইল রিচার্জ সহ বিভিন্ন সার্ভিস প্রদানের মাধ্যমে ইপিএস আপনার ডিজিটাল লেনদেনকে
+
+@endsection
+@endif
 
 
 
@@ -207,7 +229,7 @@ Blog | EPS
           @endphp
 
           <div class="offeradd">
-            <img src="{{ URL::to('') }}/media/settings/blogsidebar/{{  $post->{'blogsidebarimg_'.app()->getLocale()} }}" alt="">
+            <img src="{{ URL::to('') }}/media/settings/blogsidebar/{{  $post->{'blogsidebarimg_'.app()->getLocale()} }}" alt="EPS Offer">
 
           </div>
 
