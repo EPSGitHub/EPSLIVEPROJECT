@@ -6,8 +6,11 @@ Career Details | EPS
 @section('metadescription')
 Easy Payment System (EPS) is an innovative payment solution to make digital transactions effortless. EPS eases the transaction by providing services
 @endsection
+@section('metaimgproperty')
+https://eps.com.bd/frontend/img/logo/eps-logo.svg
+@endsection
 
-<meta property="og:image" content="https://eps.rocketnetworkbd.net/frontend/img/logo-png.png" />
+
 
 @section('maincontent')
 
@@ -197,12 +200,12 @@ Easy Payment System (EPS) is an innovative payment solution to make digital tran
 	</div>
 
 
-
+    @include('frontend.layout.social')
 
 @endsection
 
 
-@include('frontend.layout.social')
+
 
 
 

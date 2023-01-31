@@ -109,4 +109,30 @@ text-shadow: 0 0px 3px #006A4E, 0 0px 2px #006A4E !important;
     .easy{
     margin-top: 8%!important;
 }
+
+.serviceslider .carousel-caption h5 span {
+    color: #B5B5B5;
+    font-size: 25px;
+    position: absolute;
+    font-weight: 900;
+    left: 1%;
+    top: 93%;
+    padding-top: 5px;
+  }
+
+
+.Service_title_text_span{
+
+    animation: mymoves 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+
+
+  @keyframes mymoves {
+    from {top:93%;}
+    to {top: 94%;font-size:25px}
+    from {top:94%;}
+    to {top: 95%;font-size:25px}
+  }
 }

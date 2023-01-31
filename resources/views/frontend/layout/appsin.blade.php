@@ -8,7 +8,10 @@
 
   <title>@yield ('title') </title>
   <meta name="description" content="@yield('metadescription')">
-
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="@yield ('title') " />
+<meta property="og:description" content="@yield('metadescription')" />
+<meta property="og:image" content="@yield('metaimgproperty')" />
 
   @include('frontend.layout.style')
 

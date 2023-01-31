@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="{{ URL::to('') }}/frontend/img/favicon.png">
-
+  {{-- <link rel="canonical" href="" /> --}}
 
   <title>@yield ('title') </title>
   <meta name="description" content="@yield('metadescription')">
+
 
 
   @include('frontend.layout.style')

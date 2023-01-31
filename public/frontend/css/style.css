@@ -10326,7 +10326,6 @@ margin-bottom: 25px;
 
 
 
-
 /* ========================================================== Rotate Mode Responsive End ===================================================================== */
 
 
@@ -10984,6 +10983,7 @@ margin-bottom: 25px;
     animation: mymoves 1000ms;
     animation-fill-mode: forwards;
     animation-delay: 2s;
+
   }
 
 
@@ -11631,6 +11631,17 @@ margin-bottom: 25px;
   display: inline;
 }
 
+.blogcard_details a {
+    background: #006A4E;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    float: left;
+    margin-bottom: 25px;
+  }
+
 .blogcat ul li a {
     font-weight: 500;
     font-size: 12px;
@@ -11639,9 +11650,9 @@ margin-bottom: 25px;
 }
 
 .rpost p {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
-    line-height: 10px;
+    line-height: 25px;
     margin-left: 10px;
   }
 
@@ -11894,6 +11905,22 @@ margin-bottom: 25px;
 
 
 /* ======================================================== TAB Responsive  End ================================================================== */
+
+
+@media only screen and (min-width: 810px) and (max-width: 991px){
+    .cirshape {
+      position: absolute;
+      left: -54.3%;
+      top: 65%;
+
+    }
+
+    .serviceslider .carousel-caption ul li {
+        margin-left: 24px;
+    }
+    }
+
+
 
 /* ========================================================== Medium Device Responsive Start ===================================================================== */
 
@@ -12538,7 +12565,7 @@ margin-bottom: 25px;
 
       .cirshape {
         position: absolute;
-        left: -10.3%;
+        left: -12.36%;
         top: 55%;
         background: var(--red);
         display: inline-block;

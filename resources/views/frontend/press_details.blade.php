@@ -8,6 +8,10 @@
 {{ $presspost->seo_meta }}
 @endsection
 
+@section('metaimgproperty')
+{{ URL::to('') }}/media/press/{{ $presspost->feature_img }}
+@endsection
+
 
 @section('maincontent')
 

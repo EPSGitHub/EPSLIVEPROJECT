@@ -7,11 +7,12 @@
 @section('metadescription')
 {{ $events->seo_meta }}
 @endsection
-
+@section('metaimgproperty')
+{{ URL::to('') }}/media/event/{{ $events->{'featured_images_'.app()->getLocale()} }}
+@endsection
 
 @section('maincontent')
 
-<meta property="og:image" content="{{ URL::to('') }}/media/event/{{ $events->{'featured_images_'.app()->getLocale()} }}" />
 
 <style>
     <style>
